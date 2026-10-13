@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+}
+
+.contenedor {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+gap: 20px;
+padding: 30px;
+}
+
+.imagen {
+width: 30%;
+max-width: 350px;
+height: auto;
+object-fit: contain;
+}
+
+.telefono {
+font-size: clamp(18px, 3vw, 36px);
+font-weight: bold;
+color: #222;
+text-decoration: none;
+text-align: center;
+white-space: nowrap;
+}
+
+.telefono:hover {
+color: #007bff;
+}
+
+@media (max-width: 600px) {
+.contenedor {
+gap: 10px;
+padding: 10px;
+}
+
+.imagen {
+width: 25%;
+}
+
+.telefono {
+font-size: clamp(14px, 4vw, 22px);
+white-space: normal;
+}
+}
